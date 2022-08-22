@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Brown Brim",
+    "imageUrl": "https://i.etsystatic.com/9169083/r/il/daa783/2699672770/il_794xN.2699672770_dp9c.jpg",
+    "price": 25
+  },
+  {
+    "id": 2,
+    "name": "Blue Beanie",
+    "imageUrl": "https://m.media-amazon.com/images/I/71Jrobcf5lL._AC_UX569_.jpg",
+    "price": 18
+  },
+  {
+    "id": 3,
+    "name": "Brown Cowboy",
+    "imageUrl": "https://m.media-amazon.com/images/I/71ypmeMe+ZL._AC_SX342_SY445_.jpg",
+    "price": 35
+  },
+  {
+    "id": 4,
+    "name": "Grey Brim",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0507/5009/5551/products/Washington-Senators-1952-New-Era-59Fifty-Fitted-Hat-_Navy-Gray-Under-Brim_-1_1080x.jpg",
+    "price": 25
+  },
+  {
+    "id": 5,
+    "name": "Green Beanie",
+    "imageUrl": "https://m.media-amazon.com/images/I/71JaFM102OL._AC_UX522_.jpg",
+    "price": 18
+  },
+  {
+    "id": 6,
+    "name": "Palm Tree Cap",
+    "imageUrl": "https://m.media-amazon.com/images/I/71nwp3QFVaL._AC_UX679_.jpg",
+    "price": 14
+  },
+  {
+    "id": 7,
+    "name": "Red Beanie",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71mfU5ZYtAL.__AC_SY445_SX342_QL70_FMwebp_.jpg",
+    "price": 18
+  },
+  {
+    "id": 8,
+    "name": "Wolf Cap",
+    "imageUrl": "https://m.media-amazon.com/images/I/61QtAwr4AxL._AC_UX679_.jpg",
+    "price": 14
+  }
+]

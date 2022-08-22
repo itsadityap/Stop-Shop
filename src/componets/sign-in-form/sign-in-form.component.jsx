@@ -2,16 +2,12 @@ import { useState } from "react";
 
 import {
     signInWithGooglePopup,
-    createUserDocumentFromAuth,
     signInAuthUserWithEmailAndPassword,
 } from '../../utils/firebase/firebase.utils';
 
 import FormInput from "../form-inputs/form-input.component";
-
 import "./sign-in-from.styles.scss";
-
 import Button from "../button/button.component";
-
 
 const defaultFormFields = {
     email : '',
@@ -23,24 +19,19 @@ const SignInForm = () => {
     const [ formFields , setFormFields ] = useState(defaultFormFields);
     const { email, password, } = formFields;
 
-    console.log(formFields);
-
     const resetFormFields = () => {
         setFormFields(defaultFormFields);
     };
 
     const signInWithGoogle = async () => {
-        const { user } = await signInWithGooglePopup();
-        await createUserDocumentFromAuth(user);
+        await signInWithGooglePopup();
     };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         try {
-            const response = await signInAuthUserWithEmailAndPassword(email,password);
-            console.log(response);
-
+            await signInAuthUserWithEmailAndPassword(email,password);
             resetFormFields();
         }
         catch (error)
@@ -50,13 +41,13 @@ const SignInForm = () => {
                 alert("Wrong password or email not exists");
             }
         }
-    }
+    };
 
     const handleChange = (event) => {
         const {name , value} = event.target;
 
         setFormFields({...formFields, [name]: value});
-    }
+    };
 
     return(
         <div className='sign-up-container'>
